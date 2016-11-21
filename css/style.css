@@ -224,9 +224,15 @@ body {
 }
 
 @media (max-width: 800px) {
+
+  .main-header-section {
+ /*   display: block;
+    width: 100%;*/
+  }
   .main-header-section .logo img { 
-    max-width: 80%;
-    max-height: 80%;
+    /*max-width: 80%;*/
+    /*max-height: 80%;*/
+    display: none;
   }  
   .main-header-section .company-name {
     font-size: 1em;
