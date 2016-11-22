@@ -10,9 +10,16 @@
 <body>
 
 <nav class="main-header-section">
-	<div class="logo">
-		<!-- <img class="logo" src="../img/caleche-5102bf07.png" alt="The Old Mtl Carriage logo"> -->
-		<img  src="../img/caleche-small.jpg" alt="Old Carriage Company">
+    <div class="main-menu" >
+		<div class="box"><a href="#" class="tab"><i class="fa fa-bars" aria-hidden="true"></i></a>
+		<ul class="main-menu-content">
+			<li><a href="../index.html">Home</a></li>		
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="info-and-contact.html">Contact</a></li>
+		</ul>  
+  	
+ 		<!-- 	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates esse rem commodi quas sed iure adipisci corrupti! Quod nemo nostrum necessitatibus reiciendis ratione, molestias, repellendus inventore saepe. Ipsa, iste, unde!</p> -->
+ 		</div>		
 		
 	</div>
 
@@ -20,17 +27,8 @@
 		<span>Old Carriage Company</span>
 	</div>
 
-    <div class="main-menu" >
-		<!-- <span>Menu</span> -->
-		<i class="fa fa-bars" aria-hidden="true"></i>
-		<!-- <img class="wheel" src="../img/wheel-menu-3.jpg" alt=""> -->
-
-				
-		<ul class="main-menu-content">
-			<li><a href="../index.html">Home</a></li>		
-			<li><a href="gallery.html">Gallery</a></li>
-			<li><a href="info-and-contact.html">Contact</a></li>
-		</ul> 
+	<div class="logo">
+		<img  src="../img/caleche-small.jpg" alt="Old Carriage Company">
 		
 	</div>
 </nav>
@@ -47,7 +45,14 @@
 		<h2>&copy;2016 OLDCARRIAGE RIGHTS RESERVED.</h2>
 	</footer>
 </div>
-
+<script>	
+	'use strict';
+	var tab = document.querySelector('.tab');
+	tab.addEventListener('click', function () {
+	    this.parentElement.classList.toggle('open');
+	});
+	tw;
+</script>
 
 </body>
 </html>
