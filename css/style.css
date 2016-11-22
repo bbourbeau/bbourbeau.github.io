@@ -186,6 +186,8 @@ body {
 
 .about-us-section {
   display: flex;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-between;
   background: white;
