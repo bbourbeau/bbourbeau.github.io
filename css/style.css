@@ -105,6 +105,7 @@ body {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   text-align: left;
+  line-height: 25px;
 }
 .box.open {
   -webkit-transform: translateX(0);
@@ -121,15 +122,16 @@ body {
 
 @media (max-width: 500px) {
     .box {
-     width: 110px;
+      width: 110px;
       background: white;
-      padding: 20px 20px 20px 0px;
+      padding: 5px 20px 5px 0px;
       position: relative;
       -webkit-transition: all 0.4s;
       transition: all 0.4s;
       -webkit-transform: translateY(2%);
       transform: translateY(2%);
-     text-align: left;
+      text-align: left;
+      line-height: 20px;
     } 
 
     .tab {
@@ -171,11 +173,18 @@ body {
 
 
 .main-title-section, .gallery, .info-and-contact, .write-to-us {
-  padding-top: 140px;
   padding-bottom: 10%;
   min-height: 65vh;
   background: #FEDA7C;
   color: black;
+}
+
+.main-title-section, .gallery, .info-and-contact {
+  padding-top: 140px;
+ }
+
+.info-and-contact img {
+  min-width: 80%
 }
 
 .main-title-section img {
@@ -260,14 +269,19 @@ body {
   .main-header-section .logo img { 
     display: none;
   }  
-  .main-header-section .company-name {
-    font-size: 1.5em;
+
+  .main-header-section {
+    font-size: 0.75em;
     text-align: center;
   }
 
-  .company-name span {
+  .company-name, .info-and-contact, .write-to-us {
+    font-size: 0.65em;
+    text-align: center;
   }
 
+  
+  
   .subject {
     flex: 1 100%;
   }
@@ -342,17 +356,17 @@ textarea:focus {
 
 @media (max-width: 400px) {
   form > div {
-    margin: 0 0 15px 0; 
+    margin: 0 30px 15px 60px; 
   }
   form > div > label,
   legend {
-    width: 100%;
+    width: 90%;
     float: none;
-    margin: 0 0 5px 0;
+    margin: 0 30px 5px 0;
   }
   form > div > div,
   form > div > fieldset > div {
-    width: 100%;
+    width: 90%;
     float: none;
   }
   input[type=text],
@@ -361,6 +375,6 @@ textarea:focus {
   input[type=password],
   textarea,
   select {
-    width: 100%; 
+    width: 90%; 
   }
 }
