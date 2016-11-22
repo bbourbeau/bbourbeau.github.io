@@ -30,6 +30,9 @@ body {
   background-attachment: fixed;
   opacity: 0.9;
 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   padding: 0 4%;
@@ -43,6 +46,8 @@ body {
 .main-header-section {
   position:fixed;
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   justify-content: space-around;
   align-items: center;
   align-content: center;
@@ -74,6 +79,8 @@ body {
 }
 
 .logo, .company-name, .main-menu { /* div */
+  -webkit-box-flex: 1 100%;
+  -moz-box-flex: 1 100%;
   flex: 1 100%;
   max-width: 33%;
   max-width: 50%;
@@ -82,6 +89,8 @@ body {
 
 
 .main-header-section .main-menu { /* div */
+  -webkit-box-flex: 1 100%;
+  -moz-box-flex: 1 100%;
   flex: 1 100%;
 }
 
@@ -138,7 +147,7 @@ body {
       position: absolute;
       right: 0px;
       background: white;
-     color: black;
+      color: black;
       padding: 30px 0px 20px 0px;
     }
 
@@ -168,6 +177,9 @@ body {
 }
 
 .container > * {
+  -webkit-box-flex: 1 100%;
+  -moz-box-flex: 1 100%;
+
   flex: 1 100%;
 }
 
@@ -188,6 +200,8 @@ body {
 }
 
 .main-title-section img {
+  -webkit-box-flex: 1 100%;
+  -moz-box-flex: 1 100%;
   flex: 1 100%;
   max-width: 100%;
   max-height: 100%;
@@ -208,6 +222,8 @@ body {
 }
 
 .subject {
+  -webkit-box-flex: 1 20%;
+  -moz-box-flex: 1 20%;
   flex: 1 20%;
 }
 
@@ -259,6 +275,9 @@ body {
 
 
   .subject {
+    -webkit-box-flex: 1 100%;
+    -moz-box-flex: 1 100%;
+
     flex: 1 100%;
   }
 }
@@ -283,6 +302,9 @@ body {
   
   
   .subject {
+    -webkit-box-flex: 1 100%;
+    -moz-box-flex: 1 100%;
+
     flex: 1 100%;
   }
 }
